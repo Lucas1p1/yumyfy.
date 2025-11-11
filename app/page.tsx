@@ -312,38 +312,15 @@ export default function HomePage() {
               {/* App Store Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a
-  href="#"
-  className="px-4 py-2.5 bg-black dark:bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 text-sm font-semibold border border-gray-800"
+  href="https://play.google.com/store/apps/details?id=YOUR.APP.ID"
+  target="_blank"
+  rel="noopener noreferrer"
 >
-  {/* Google Play Icon */}
-  <svg
-    className="w-5 h-5"
-    viewBox="0 0 512 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M325.3 234.3L104.3 11.3c-5.3-5.3-13.9-3.1-16.2 4.1-3.6 11.4-5.6 23.4-5.6 35.6v425.3c0 12.1 2 24.2 5.6 35.6 2.3 7.2 10.8 9.4 16.2 4.1l221-223c4.5-4.5 4.5-11.8 0-16.2z"
-      fill="#FF3C00"
-    />
-    <path
-      d="M104.3 500.7c-5.3-5.3-8.5-13-8.5-21V32.3c0-8 3.2-15.7 8.5-21L320 256 104.3 500.7z"
-      fill="#FFDA00"
-    />
-    <path
-      d="M325.3 277.7L104.3 500.7 325.3 277.7z"
-      fill="#0F9D58"
-    />
-    <path
-      d="M325.3 234.3L104.3 11.3 325.3 234.3z"
-      fill="#4285F4"
-    />
-  </svg>
-
-  {/* Text */}
-  <div className="flex flex-col leading-none">
-    <span className="text-xs opacity-80">GET IT ON</span>
-    <span className="text-sm font-bold">Google Play</span>
-  </div>
+  <img
+    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    alt="Get it on Google Play"
+    className="w-40 md:w-48"
+  />
 </a>
 
                 <a
