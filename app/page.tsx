@@ -311,7 +311,7 @@ export default function HomePage() {
 
               {/* App Store Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                 <a
+                <a
     href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
     target="_blank"
     rel="noopener noreferrer"
@@ -322,20 +322,18 @@ export default function HomePage() {
       className="w-40 md:w-48"
     />
   </a>
-
-  {/* App Store Badge */}
-  <a
-    href="https://apps.apple.com/app/idYOUR_APPLE_APP_ID"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg"
-      alt="Download on the App Store"
-      className="w-40 md:w-48"
-    />
-  </a>
-
+                <a
+                  href="#"
+                  className="px-4 py-2.5 bg-black dark:bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 text-sm font-semibold border border-gray-800"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.3-3.14-2.53C4.25 17 2.94 12.46 4.7 9.12c.9-1.56 2.64-2.58 4.48-2.64 1.33-.07 2.57.72 3.38.72.81 0 2.26-.88 3.81-.74.64.1 2.45.31 3.62 2.31-.94.64-1.8 1.91-1.64 3.15.13 1.37 1.04 2.14 2.01 2.59-.27.75-.67 1.41-1.09 1.91zM12.03 6.71c-.09-1.16.93-2.3 2.02-2.48.06.84-.27 1.93-1.02 2.05-.12 0-.24 0-.37 0-.63-.01-1.59-.52-1.63-1.57z" />
+                  </svg>
+                  <div className="flex flex-col leading-none">
+                    <span className="text-xs opacity-80">Download ON</span>
+                    <span className="text-sm font-bold">App Store</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
