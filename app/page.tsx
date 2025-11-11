@@ -442,39 +442,48 @@ export default function HomePage() {
                   </div>
 
                   <div className="relative group">
-                    <button className="px-2.5 py-1 bg-primary dark:bg-orange-500 text-white dark:text-black font-semibold rounded-lg hover:bg-primary/90 dark:hover:bg-orange-600 transition-colors flex items-center gap-1.5 text-xs">
-                      Deliveryman App
-                      <span className="text-xs"></span>
-                    </button>
-                    <div className="absolute left-0 mt-1 w-36 bg-white dark:bg-slate-800 rounded-lg shadow-lg hidden group-hover:block z-20 border border-purple-100 dark:border-orange-500/30">
-                     <a
-  href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
->
-  {/* Google Play triangle logo inline */}
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-    alt="Google Play logo"
-    className="w-3 h-3"
-  />
-  <span className="font-medium">Google Play</span>
-</a>
+  <button className="px-2.5 py-1 bg-primary dark:bg-orange-500 text-white dark:text-black font-semibold rounded-lg hover:bg-primary/90 dark:hover:bg-orange-600 transition-colors flex items-center gap-1.5 text-xs">
+    Deliveryman App
+  </button>
 
-                      <a
-                        href="#"
-                        className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors text-foreground dark:text-white text-xs"
-                      >
-                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.3-3.14-2.53C4.25 17 2.94 12.46 4.7 9.12c.9-1.56 2.64-2.58 4.48-2.64 1.33-.07 2.57.72 3.38.72.81 0 2.26-.88 3.81-.74.64.1 2.45.31 3.62 2.31-.94.64-1.8 1.91-1.64 3.15.13 1.37 1.04 2.14 2.01 2.59-.27.75-.67 1.41-1.09 1.91zM12.03 6.71c-.09-1.16.93-2.3 2.02-2.48.06.84-.27 1.93-1.02 2.05-.12 0-.24 0-.37 0-.63-.01-1.59-.52-1.63-1.57z" />
-                        </svg>
-                        <span className="font-medium">App Store</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  {/* Dropdown */}
+  <div className="absolute left-0 mt-1 w-36 bg-white dark:bg-slate-800 rounded-lg shadow-lg hidden group-hover:block z-20 border border-purple-100 dark:border-orange-500/30">
+    
+    {/* Google Play Link */}
+    <a
+      href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Google Play logo"
+        className="w-3 h-3"
+      />
+      <span className="font-medium">Google Play</span>
+    </a>
+
+    {/* App Store Link */}
+    <a
+      href="https://apps.apple.com/app/idYOUR_APPLE_APP_ID"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors text-foreground dark:text-white text-xs"
+    >
+      {/* Inline Apple logo SVG */}
+      <svg
+        className="w-3 h-3"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16.365 1.43c0 1.04-.42 2.06-1.18 2.82-.78.78-1.88 1.23-2.94 1.23-.06-1.05.42-2.11 1.18-2.87.77-.78 1.88-1.27 2.94-1.18zM20.8 17.2c-.77 1.03-1.63 1.96-2.71 1.96-1.07 0-1.37-.7-2.6-.7s-1.51.7-2.59.7c-1.14 0-2.1-1.09-2.88-2.15-1.25-1.68-2.2-4.75-.98-6.85.84-1.5 2.33-2.46 4.08-2.46 1.06 0 2.06.63 2.6.63.54 0 2.17-.84 3.66.63-.08.06-2.35 1.37-2.31 4.07.04 3.07 2.7 4.57 2.82 4.63z" />
+      </svg>
+      <span className="font-medium">App Store</span>
+    </a>
+  </div>
+</div>
 
               {/* Right Image */}
               <div className="relative bg-white dark:bg-slate-700 rounded-lg overflow-hidden h-56">
