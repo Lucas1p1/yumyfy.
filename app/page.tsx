@@ -183,7 +183,7 @@ export default function HomePage() {
                 src="/images/nigerian-delivery-professional.jpg"
                 alt="Delivery Service"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
