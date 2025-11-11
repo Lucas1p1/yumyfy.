@@ -311,37 +311,49 @@ export default function HomePage() {
 
               {/* App Store Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <a
+                <div className="flex gap-4 flex-wrap">
+  {/* Google Play Button */}
+  <a
     href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
+    className="px-4 py-2.5 bg-black dark:bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 text-sm font-semibold border border-gray-800"
   >
+    {/* Google Play triangle logo inline */}
     <img
-      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-      alt="Get it on Google Play"
-      className="w-20 h-auto"
+      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+      alt="Google Play logo"
+      className="w-5 h-5"
     />
+    <div className="flex flex-col leading-none">
+      <span className="text-xs opacity-80">GET IT ON</span>
+      <span className="text-sm font-bold">Google Play</span>
+    </div>
   </a>
 
-  {/* App Store Link */}
+  {/* App Store Button */}
   <a
     href="https://apps.apple.com/app/idYOUR_APPLE_APP_ID"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
+    className="px-4 py-2.5 bg-black dark:bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 text-sm font-semibold border border-gray-800"
   >
-    {/* Apple logo inline SVG */}
+    {/* Inline Apple logo */}
     <svg
-      className="w-3 h-3"
+      className="w-5 h-5"
       viewBox="0 0 24 24"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path d="M16.365 1.43c0 1.04-.42 2.06-1.18 2.82-.78.78-1.88 1.23-2.94 1.23-.06-1.05.42-2.11 1.18-2.87.77-.78 1.88-1.27 2.94-1.18zM20.8 17.2c-.77 1.03-1.63 1.96-2.71 1.96-1.07 0-1.37-.7-2.6-.7s-1.51.7-2.59.7c-1.14 0-2.1-1.09-2.88-2.15-1.25-1.68-2.2-4.75-.98-6.85.84-1.5 2.33-2.46 4.08-2.46 1.06 0 2.06.63 2.6.63.54 0 2.17-.84 3.66.63-.08.06-2.35 1.37-2.31 4.07.04 3.07 2.7 4.57 2.82 4.63z" />
     </svg>
-    <span className="font-medium">App Store</span>
+    <div className="flex flex-col leading-none">
+      <span className="text-xs opacity-80">Download ON</span>
+      <span className="text-sm font-bold">App Store</span>
+    </div>
   </a>
+</div>
+
               </div>
             </div>
           </div>
