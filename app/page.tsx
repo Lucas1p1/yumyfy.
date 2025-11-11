@@ -314,22 +314,16 @@ export default function HomePage() {
                 <div className="flex gap-4 flex-wrap">
   {/* Google Play Button */}
   <a
-    href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-4 py-2.5 bg-black dark:bg-black text-white rounded-lg hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 text-sm font-semibold border border-gray-800"
-  >
-    {/* Google Play triangle logo inline */}
-    <img
-      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-      alt="Google Play logo"
-      className="w-5 h-5"
-    />
-    <div className="flex flex-col leading-none">
-      <span className="text-xs opacity-80">GET IT ON</span>
-      <span className="text-sm font-bold">Google Play</span>
-    </div>
-  </a>
+  href="https://play.google.com/store/apps/details?id=YOUR.APP.ID"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    alt="Get it on Google Play"
+    className="w-40 md:w-48"
+  />
+</a>
 
   {/* App Store Button */}
   <a
