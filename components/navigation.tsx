@@ -36,7 +36,7 @@ export function Navigation({ isScrolled }: { isScrolled: boolean }) {
             </button>
           </Link>
           <Link href="/signup">
-            <button className="px-6 py-2 bg-gradient-blend text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all transform hover:scale-105">
+            <button className="px-6 py-2 text-primary font-semibold hover:bg-primary/10 rounded-lg transition-colors">
               Sign Up
             </button>
           </Link>
