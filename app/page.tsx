@@ -412,18 +412,23 @@ export default function HomePage() {
                   <div className="relative group">
                     <button className="px-2.5 py-1 bg-primary dark:bg-orange-500 text-white dark:text-black font-semibold rounded-lg hover:bg-primary/90 dark:hover:bg-orange-600 transition-colors flex items-center gap-1.5 text-xs">
                       Seller App
-                      <span className="text-xs">▼</span>
+                      <span className="text-xs"></span>
                     </button>
                     <div className="absolute left-0 mt-1 w-36 bg-white dark:bg-slate-800 rounded-lg shadow-lg hidden group-hover:block z-20 border border-purple-100 dark:border-orange-500/30">
-                      <a
-                        href="#"
-                        className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
-                      >
-                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M3 13.5v8.236q0 .849.628 1.456.628.607 1.534.607h13.676q.906 0 1.534-.607.628-.607.628-1.456V13.5M12 1l-5.387 6.234h10.774z" />
-                        </svg>
-                        <span className="font-medium">Google Play</span>
-                      </a>
+                      <div className="flex flex-col gap-2">
+  {/* Google Play Link */}
+  <a
+    href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
+  >
+    <img
+      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      className="w-20 h-auto"
+    />
+  </a>
                       <a
                         href="#"
                         className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors text-foreground dark:text-white text-xs"
@@ -439,18 +444,24 @@ export default function HomePage() {
                   <div className="relative group">
                     <button className="px-2.5 py-1 bg-primary dark:bg-orange-500 text-white dark:text-black font-semibold rounded-lg hover:bg-primary/90 dark:hover:bg-orange-600 transition-colors flex items-center gap-1.5 text-xs">
                       Deliveryman App
-                      <span className="text-xs">▼</span>
+                      <span className="text-xs"></span>
                     </button>
                     <div className="absolute left-0 mt-1 w-36 bg-white dark:bg-slate-800 rounded-lg shadow-lg hidden group-hover:block z-20 border border-purple-100 dark:border-orange-500/30">
-                      <a
-                        href="#"
-                        className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
-                      >
-                        <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M3 13.5v8.236q0 .849.628 1.456.628.607 1.534.607h13.676q.906 0 1.534-.607.628-.607.628-1.456V13.5M12 1l-5.387 6.234h10.774z" />
-                        </svg>
-                        <span className="font-medium">Google Play</span>
-                      </a>
+                     <a
+  href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors border-b border-purple-100 dark:border-orange-500/20 text-foreground dark:text-white text-xs"
+>
+  {/* Google Play triangle logo inline */}
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+    alt="Google Play logo"
+    className="w-3 h-3"
+  />
+  <span className="font-medium">Google Play</span>
+</a>
+
                       <a
                         href="#"
                         className="flex items-center gap-2 px-2.5 py-1 hover:bg-purple-50 dark:hover:bg-slate-700 transition-colors text-foreground dark:text-white text-xs"
