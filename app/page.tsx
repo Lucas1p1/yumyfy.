@@ -330,7 +330,7 @@ export default function HomePage() {
 >
   <img
     src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg"
-    alt="Download on the App Store"
+    alt="Get it on the App Store"
     className="w-40 md:w-48"
   />
 </a>
