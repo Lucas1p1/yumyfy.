@@ -311,29 +311,30 @@ export default function HomePage() {
 
               {/* App Store Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <a
-  href="https://play.google.com/store/apps/details?id=YOUR.APP.ID"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-    alt="Get it on Google Play"
-    className="w-40 md:w-48"
-  />
-</a>
+                 <a
+    href="https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      className="w-40 md:w-48"
+    />
+  </a>
 
-              <a
-  href="https://apps.apple.com/app/idYOUR_APP_ID"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg"
-    alt="Get it on the App Store"
-    className="w-40 md:w-48"
-  />
-</a>
+  {/* App Store Badge */}
+  <a
+    href="https://apps.apple.com/app/idYOUR_APPLE_APP_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg"
+      alt="Download on the App Store"
+      className="w-40 md:w-48"
+    />
+  </a>
 
               </div>
             </div>
