@@ -143,7 +143,7 @@ export default function HomePage() {
             <div className="relative h-80 lg:h-96">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-200/30 to-orange-200/30 dark:from-orange-500/10 dark:to-purple-500/10 rounded-3xl blur-2xl"></div>
               <Image
-                src="/images/nigerian-hero-app.jpg"
+                src="/images/nigerian-hero-app.png"
                 alt="Yumyfy Mobile App"
                 fill
                 priority
@@ -180,7 +180,7 @@ export default function HomePage() {
 
             <div className="relative rounded-2xl overflow-hidden h-60 lg:h-72 order-1 lg:order-2">
               <Image
-                src="/images/nigerian-delivery-professional.jpg"
+                src="/images/nigerian-delivery-professional.png"
                 alt="Delivery Service"
                 fill
                 className="object-contain"

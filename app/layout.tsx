@@ -14,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Yumyfy - Your One-Stop Super App",
   description: "Groceries, Pharmacy, Food & Parcel Delivery in One App",
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -25,6 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* 🔥 Add this script BEFORE anything renders */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{const t=localStorage.getItem('theme');const d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&d)){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(_){}})();`,
+          }}
+        />
+
+        <meta name="color-scheme" content="dark light" />
+
         <style>{`
           :root {
             color-scheme: light;
